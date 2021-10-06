@@ -1,10 +1,16 @@
 import react from "react";
+import {BrowserRouter as Router} from 'react-router-dom';
+import Header from './components/Header'
+import Section from './components/Section'
 
 class App extends react.Component{
   render(){
     return(
       <div className="app">
-        Hello World
+        <Router>
+          <Header />
+          <Section />
+        </Router>
       </div>
     );
   }
