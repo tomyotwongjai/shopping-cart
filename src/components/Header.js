@@ -4,9 +4,11 @@ import Close from './svg/times-solid.svg'
 import CartIcon from './svg/shopping-cart-solid.svg'
 import {Link} from 'react-router-dom'
 import './css/Header.css'
+import {DataContext} from './Context'
 
 
 export class Header extends Component {
+    static contextType = DataContext;
 
     state = {
         toggle: false
